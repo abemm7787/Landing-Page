@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CaVA Web 3.0</title>
   <link rel="stylesheet" href="./css/tailwind.css" />
   <link rel="stylesheet" href="style.css">
 </head>
@@ -18,11 +17,12 @@
   <div id="menu-bar" class="fas fa-bars"></div>
 
   <nav class="navbar">
-    <a href="#home">home</a>
-    <a href="#vendor">vendor</a>
+    <div class="share">
+    </div>
+    <a href="http://127.0.0.1:5500/index.html#home">home</a>
     <a href="#contact">contact</a>
-
-  </nav>
+ 
+</nav>
 
 </header>
 
@@ -50,12 +50,12 @@
         Now</a>
     </div>
     <div class="md:w-3/5">
-      <img src="./images/savant.jpg" id="mainPhoto" class="w-full" />
+      <img src="./images/products/banner.jpg" id="mainPhoto" class="w-full" />
     </div>
   </div>
   <!-- Hero sectioin -->
   <script>
-    let images = ['./images/products/banner.jpg', './images/products/banner2.jpg', './images/products/banner3.jpg', './images/products/banner4.jpg', './images/products/savant.jpg'];
+    let images = ['./images/products/banner.jpg', './images/products/banner2.jpg', './images/products/banner3.jpg', './images/products/banner4.jpg', './images/products/product5.jpg'];
     let index = 0;
     const imgElement = document.getElementById('mainPhoto');
     function change() {
@@ -110,7 +110,7 @@
     
     <div class="shadow-lg rounded-l py-3 transform transition hover:bg-indigo-50 hover:-translate-y-0.5 text-sm">
       <a href="#">
-        <img src="./images/products/product4.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        <img src="./images/products/product3.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
       </a>
       <div class="p-5">
         <div class="flex flex-column justify-between">
@@ -140,7 +140,7 @@
     
     <div class="shadow-lg rounded-l py-3 transform transition hover:bg-indigo-50 hover:-translate-y-0.5 text-sm">
       <a href="#">
-        <img src="./images/products/product4.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        <img src="./images/products/product5.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
       </a>
       <div class="p-5">
         <div class="flex flex-column justify-between">
@@ -286,60 +286,7 @@
     </style>
     <!-- Modal logic -->
     <script>
-      // var myModalTshirt = document.getElementById("myModal-Tshirt")
-      // var modal2 = document.getElementById("myModal8")
-
-
-
-      // var btn4 = document.getElementById("myBtn4");
-      // var btn5 = document.getElementById("myBtn5");
-      // var btn6 = document.getElementById("myBtn6");
-      // var btn7 = document.getElementById("myBtn7");
-      // var btn8 = document.getElementById("myBtn8");
-
-
-      // btn8.onclick = function () {
-      //   modal2.style.display = "block"
-      // }
-      // btn7.onclick = function () {
-      //   modal2.style.display = "block"
-      // }
-      // btn6.onclick = function () {
-      //   modal2.style.display = "block"
-      // }
-      // btn5.onclick = function () {
-      //   modal2.style.display = "block"
-      // }
-
-
-
-
-
-
-      // btn4.onclick = function () {
-      //   modal.style.display = "block"
-      // }
-      // btn3.onclick = function () {
-      //   modal.style.display = "block"
-      // }
-
-
-      //slim cut pants
-      // var  slimCutmodal = document.getElementById("myslimCutmodal")
-      // var btn2 = document.getElementById("myBtn2");    
-      // btn2.onclick = function () {
-      //           slimCutmodal.style.display = "block"
-      //         }
-
-
-
-      // <div id="myModal-SlimCutPants"
-      // class="modal-Tshirt flex bg-gradient-to-b flex-none absolute z-50 mt-96 pt-96 left-0 top-0 w-96 h-64">
-
-      // <div class="modal-content-SlimCutPants bg-red-50 shadow-md rounded-r-md mt-auto p-20 border-solid border-2">
-      //   <span class="close">&times</span>
-
-
+ 
       //  AirForce Ship
       var myAirForceShoes = document.getElementById("myModal-AirForceShoes")
       var btn3 = document.getElementById("myBtn3");
