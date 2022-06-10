@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CaVA Web 3.0</title>
+  <link rel="stylesheet" href="./css/tailwind.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<header>
+
+  <a href="#" class="logo">Big Apple </a>
+
+  <div id="menu-bar" class="fas fa-bars"></div>
+
+  <nav class="navbar">
+    <a href="#home">home</a>
+    <a href="#vendor">vendor</a>
+    <a href="#contact">contact</a>
+
+  </nav>
+
+</header>
+
+<body>
+  <div class="container mx-auto p-5">
+    <div class="md:flex md:flex-row md:justify-between text-center text-sm sm:text-base">
+      <div class="flex flex-row justify-center">
+        <!-- <div class="bg-gradient-to-r from-purple-400 to-red-400 w-10 h-10 rounded-lg"></div> -->
+
+      </div>
+
+
+    </div>
+    <!-- Cart Selection-->
+
+
+  </div><!-- Main Navigation -->
+  <div class="md:flex md:flex-row mt-20">
+    <div class="md:w-2/5 flex flex-col justify-center items-center">
+      <h2 class="font-serif text-5xl text-gray-600 mb-4 text-center md:self-start md:text-left">Find AllOur Weddings
+        Here</h2>
+
+      <a href="#"
+        class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-4 px-8 text-gray-50 uppercase text-xl md:self-start my-5">Shop
+        Now</a>
+    </div>
+    <div class="md:w-3/5">
+      <img src="./images/savant.jpg" id="mainPhoto" class="w-full" />
+    </div>
+  </div>
+  <!-- Hero sectioin -->
+  <script>
+    let images = ['./images/products/banner.jpg', './images/products/banner2.jpg', './images/products/banner3.jpg', './images/products/banner4.jpg', './images/products/savant.jpg'];
+    let index = 0;
+    const imgElement = document.getElementById('mainPhoto');
+    function change() {
+      imgElement.src = images[index];
+      index > 1 ? index = 0 : index++;
+    }
+
+    window.onload = function () {
+      setInterval(change, 3000);
+    };
+
+  </script>
+
+
+
+
+  <div class="grid grid-flow-row grid-cols-1 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
+    <div id="myModal-AirForceShoes"
+      class="modal-Tshirt flex bg-gradient-to-b flex-none absolute z-50 mt-96 pt-96 left-0 top-0 w-96 h-64">
+      <div class="modal-content-Tshirt bg-red-50 shadow-md rounded-r-md mt-auto p-20 border-solid border-2">
+        <div><a></a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="shadow-lg rounded-l py-3 transform transition hover:bg-indigo-50 hover:-translate-y-0.5 text-sm">
+      <a href="#">
+        <img src="./images/products/product1.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+      </a>
+      <div class="p-5">
+        <div class="flex flex-column justify-between">
+        </div>
+      </div>
+    </div>
+    
+    <div class="shadow-lg rounded-l py-3 transform transition hover:bg-indigo-50 hover:-translate-y-0.5 text-sm">
+      <a href="#">
+        <img src="./images/products/product2.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+      </a>
+      <div class="p-5">
+        <div class="flex flex-column justify-between">
+        
+        </div>
+
+
+        
+
+      </div>
+    </div>
+    
+    <div class="shadow-lg rounded-l py-3 transform transition hover:bg-indigo-50 hover:-translate-y-0.5 text-sm">
+      <a href="#">
+        <img src="./images/products/product4.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+      </a>
+      <div class="p-5">
+        <div class="flex flex-column justify-between">
+        
+        </div>
+
+
+        
+
+      </div>
+    </div>
+    
+    <div class="shadow-lg rounded-l py-3 transform transition hover:bg-indigo-50 hover:-translate-y-0.5 text-sm">
+      <a href="#">
+        <img src="./images/products/product4.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+      </a>
+      <div class="p-5">
+        <div class="flex flex-column justify-between">
+        
+        </div>
+
+
+        
+
+      </div>
+    </div>
+    
+    <div class="shadow-lg rounded-l py-3 transform transition hover:bg-indigo-50 hover:-translate-y-0.5 text-sm">
+      <a href="#">
+        <img src="./images/products/product4.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+      </a>
+      <div class="p-5">
+        <div class="flex flex-column justify-between">
+        
+        </div>
+
+
+        
+
+      </div>
+    </div>
+    
+    <div class="shadow-lg rounded-l py-3 transform transition hover:bg-indigo-50 hover:-translate-y-0.5 text-sm">
+      <a href="#">
+        <img src="./images/products/product4.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+      </a>
+      <div class="p-5">
+        <div class="flex flex-column justify-between">
+        
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <div id="myModal-SmartWatch"
+    class="modal-Tshirt flex bg-gradient-to-b flex-none absolute z-50 mt-96 pt-96 left-0 top-0 w-96 h-64">
+
+    <div class="modal-content-Tshirt bg-red-50 shadow-md rounded-r-md mt-auto p-20 border-solid border-2">
+      <span class="close">&times</span>
+      <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-lg" href="#">Smart Watch
+        </h3></a>
+
+
+      <div>Cost <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-lg">$435.00</a>
+      </div>
+      <p>Free 2 day Shipping</p>
+    </div>
+  </div>
+
+
+
+
+  </div> <!-- Men's Collection Section -->
+
+
+
+
+
+  <div class="rounded-lg shadow-lg my-20 flex flex-row">
+    <div
+      class="lg:w-3/5 w-full bg-gradient-to-r from-black to-purple-900 lg:from-black lg:via-purple-900 lg:to-transparent rounded-lg text-gray-100 p-12">
+      <div class="lg:w-1/2">
+        <h3 class="text-2xl font-extrabold mb-4">Subscribe to get our offers first</h3>
+        <p class="mb-4 leading-relaxed">Want to hear from us when we have new offers? Sign up for our newsletter and
+          we'll email you every time we have new sale offers.</p>
+        <div>
+          <input type="email" placeholder="Enter email address"
+            class="bg-gray-600 text-gray-200 placeholder-gray-400 px-4 py-3 w-full rounded-lg focus:outline-none mb-4" />
+          <button type="submit" class=" cursor-pointer bg-red-600 py-3 rounded-lg w-full">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="lg:w-2/5 w-full lg:flex lg:flex-row hidden">
+      <img src="./images/subscribe-banner.png" class="h-96" />
+    </div>
+    ']
+
+
+    <style>
+      .modal-Tshirt {
+        background-color: rgba(136, 136, 136, 0.221);
+        display: none;
+        position: absolute;
+        z-index: 1000;
+        margin-top: 530px;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 600%;
+
+
+      }
+
+
+      .modal {
+        background-color: rgba(136, 136, 136, 0.221);
+        display: none;
+        position: absolute;
+        z-index: 1000;
+        margin-top: 530px;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 600%;
+
+
+
+      }
+
+      .modal2 {
+        background-color: rgba(136, 136, 136, 0.221);
+        display: none;
+        position: absolute;
+        z-index: 1000;
+        margin-top: 1200px;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 600%;
+
+
+
+      }
+
+      .modal-content {
+        background-color: #fefefe;
+        box-shadow: 2px 5px #0987c15f;
+        border-bottom-right-radius: #888888;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 70%;
+        height: 10%;
+      }
+
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    </style>
+    <!-- Modal logic -->
+    <script>
+      // var myModalTshirt = document.getElementById("myModal-Tshirt")
+      // var modal2 = document.getElementById("myModal8")
+
+
+
+      // var btn4 = document.getElementById("myBtn4");
+      // var btn5 = document.getElementById("myBtn5");
+      // var btn6 = document.getElementById("myBtn6");
+      // var btn7 = document.getElementById("myBtn7");
+      // var btn8 = document.getElementById("myBtn8");
+
+
+      // btn8.onclick = function () {
+      //   modal2.style.display = "block"
+      // }
+      // btn7.onclick = function () {
+      //   modal2.style.display = "block"
+      // }
+      // btn6.onclick = function () {
+      //   modal2.style.display = "block"
+      // }
+      // btn5.onclick = function () {
+      //   modal2.style.display = "block"
+      // }
+
+
+
+
+
+
+      // btn4.onclick = function () {
+      //   modal.style.display = "block"
+      // }
+      // btn3.onclick = function () {
+      //   modal.style.display = "block"
+      // }
+
+
+      //slim cut pants
+      // var  slimCutmodal = document.getElementById("myslimCutmodal")
+      // var btn2 = document.getElementById("myBtn2");    
+      // btn2.onclick = function () {
+      //           slimCutmodal.style.display = "block"
+      //         }
+
+
+
+      // <div id="myModal-SlimCutPants"
+      // class="modal-Tshirt flex bg-gradient-to-b flex-none absolute z-50 mt-96 pt-96 left-0 top-0 w-96 h-64">
+
+      // <div class="modal-content-SlimCutPants bg-red-50 shadow-md rounded-r-md mt-auto p-20 border-solid border-2">
+      //   <span class="close">&times</span>
+
+
+      //  AirForce Ship
+      var myAirForceShoes = document.getElementById("myModal-AirForceShoes")
+      var btn3 = document.getElementById("myBtn3");
+      btn3.onclick = function () {
+        myAirForceShoes.style.display = "block"
+      }
+
+
+
+      // Slim cut jeans modal logic
+      var myModalSlimCutPants = document.getElementById("myModal-SlimCutPants")
+      var btn2 = document.getElementById("myBtn2")
+      btn2.onclick = function () {
+        myModalSlimCutPants.style.display = "block"
+      }
+
+      //t-shirt modal logic
+      var myModalTshirt = document.getElementById("myModal-Tshirt")
+      var btn = document.getElementById("myBtn");
+      btn.onclick = function () {
+        myModalTshirt.style.display = "block"
+      }
+
+      // Smart Watch Modal Logic
+      var mySmartWatch = document.getElementById("myModal-SmartWatch")
+      var btn4 = document.getElementById("myBtn4");
+      btn4.onclick = function () {
+        mySmartWatch.style.display = "block"
+      }
+
+      // V Dress Modal Logic
+      var myVdress = document.getElementById("myModal-Vdress")
+      var btn5 = document.getElementById("myBtn5");
+      btn5.onclick = function () {
+        myVdress.style.display = "block"
+      }
+
+      // Wrapped Shoes Modal Logic
+      var myWrappedShoes = document.getElementById("myModal-myWrappedShoes")
+      var btn6 = document.getElementById("myBtn6");
+      btn6.onclick = function () {
+        myWrappedShoes.style.display = "block"
+      }
+
+      // Blue Denuim Dress Logic
+      var myBlueDenuim = document.getElementById("myModal-myBlueDenuim")
+      var btn7 = document.getElementById("myBtn7");
+      btn7.onclick = function () {
+        myBlueDenuim.style.display = "block"
+      }
+
+      // Low Printed Dress Logic
+      var myLowPrintedDress = document.getElementById("lowPrintedDress")
+      var btn8 = document.getElementById("myBtn8");
+      btn8.onclick = function () {
+        myLowPrintedDress.style.display = "block"
+      }
+
+
+      //window modal exit       
+      window.onclick = function (event) {
+        if (event.target == myModalTshirt) {
+          myModalTshirt.style.display = "none"
+        }
+        if (event.target == myModalSlimCutPants) {
+          myModalSlimCutPants.style.display = "none"
+        }
+        if (event.target == myAirForceShoes) {
+          myAirForceShoes.style.display = "none"
+
+          if (event.target == mySmartWatch) {
+            mySmartWatch.style.display = "none"
+          }
+          if (event.target == myVdress) {
+            myVdress.style.display == "none"
+          }
+          if (event.target == myWrappedShoes) {
+            myWrappedShoes.style.display == "none"
+          }
+          if (event.target == myBlueDenuim) {
+            myBlueDenuim.style.display == "none"
+          }
+          if (event.target == myLowPrintedDress) {
+            myLowPrintedDress.style.display == "none"
+          }
+        }
+      }
+
+      //multiple span modal exit. 
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function () {
+        myModalTshirt.style.display = "none"
+
+      }
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function () {
+
+        myModalSlimCutPants.style.display = "none"
+      }
+
+    </script>
+    <script src="cart.js">
+    </script>
+
+  </div><!-- Newsletter Section -->
+
+  <div class="border-t-2 border-gray-300 flex flex-col md:flex-row md:justify-between text-center py-5 text-sm">
+    <div class="mb-4">
+      <a href="#" class="mx-2.5">About</a>
+      <a href="#" class="mx-2.5">Privacy Policy</a>
+      <a href="#" class="mx-2.5">Terms of Services</a>
+    </div>
+
+    <p>&copy; Copyright Reserved 2022</p>
+  </div><!-- Footer Section -->
+  </div>
+</body>
+
+</html>
