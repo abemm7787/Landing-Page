@@ -1,20 +1,213 @@
+<style> 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@300;400;600;700&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+
+header{
+  height: 30px;
+  margin-bottom: 40px;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    margin-top: 1%;
+}
+.nav > li:hover{
+    color: red;
+}
+.nav > li{
+    list-style: none;
+    cursor: pointer;
+    padding: 1%;
+}
+
+.nav > li:nth-child(2){
+    font-weight: 600;
+
+    
+}
+.nav > li:nth-child(3){
+    font-weight: 600;       
+}
+
+.nav > li:nth-child(6){
+    font-size: 20px;
+    color: gray; 
+
+}
+.nav > li:nth-child(6):hover{
+    color: red;
+}
+.search{   
+    width: 70%;
+    position: relative;
+    padding: 1%;
+    
+}
+.search > input{
+    
+    border: 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: -5px;
+    padding: 1%;
+    background-color: rgba(128, 128, 128, 0.212);
+    
+}
+.search > input:focus{
+    outline: none;
+}
+
+
+.notification i{
+    font-size: 20px;
+    
+    color: gray;
+    margin-top: 5px;
+
+}
+.notification i:hover{
+    color: rgba(0, 17, 255, 0.733);
+}
+
+
+.profile img{
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+/* <!-- --------------------nav End -------------------- --> */
+
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,250px);
+    grid-template-rows: auto;
+    justify-content: center;
+    column-gap: 15px;
+    margin-top: 30px;
+    /* gap: 1%; */
+    /* margin: 2%; */
+
+}
+.container > div{
+    padding: 0;
+    margin: 15px 10px;
+    border-radius: 20px;
+
+}
+.card > iframe{
+    border-radius:25px ;
+}
+.container  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.card_small{
+    grid-row-end: span 26;
+}
+.card_midium{
+    grid-row-end: span 33;
+}
+.card_large{
+    grid-row-end: span 40;
+}
+
+
+@media all and(min-width: 421px) and (max-width: 768px){
+    .container{
+        grid-template-columns: repeat(auto-fill,200px);
+    }
+    .search{
+        display: none;
+    }
+    .nav > li:nth-child(2){
+        font-weight: 500;
+        font-size: 15px;
+        
+    }
+}
+
+@media all and (min-width:50px) and (max-width: 420px){
+    .container{
+        grid-template-columns: repeat(auto-fill,150px);
+    }
+    .container > div{
+        padding: 0;
+        margin: 8px 5px;
+        border-radius: 20px;
+    
+    }
+    .nav{
+        padding: 2%;
+    }
+    .search > input{
+        /* display: none; */
+        padding: 3%;
+    }
+    .nav > li>img{
+        width: 30px;
+        height: 30px;
+        
+    }
+    .nav > li {
+        font-size: 12px;
+        
+    }
+    .nav > li i{
+        display: none;
+        
+    }
+    .nav > li:nth-child(2){
+        display: none;
+        
+    }
+    .nav > li:nth-child(3){
+        display: none;
+        
+    }
+    .card > iframe{
+        border-radius:25px ;
+    }
+
+}
+    
+</style>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/tailwind.css" />
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest Clone -Durgesh Soni</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
-
-
+<body>
+   
 <header>
 
-  <a href="#" class="logo">Big Apple </a>
+  <a   href="http://127.0.0.1:5500/index.html#home" class="logo">Big Apple </a>
 
-  <div id="menu-bar" class="fas fa-bars"></div>
+ 
 
   <nav class="navbar">
     <div class="share">
@@ -26,436 +219,119 @@
 
 </header>
 
-<body>
-  <div class="container mx-auto p-5">
-    <div class="md:flex md:flex-row md:justify-between text-center text-sm sm:text-base">
-      <div class="flex flex-row justify-center">
-        <!-- <div class="bg-gradient-to-r from-purple-400 to-red-400 w-10 h-10 rounded-lg"></div> -->
 
-      </div>
+   
+    <!-- --------------------nav End -------------------- -->
 
+    <div class="container">
+        <div class="card card_small">
+          <img src="./images/products/product1.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div> 
 
-    </div>
-    <!-- Cart Selection-->
-
-
-  </div><!-- Main Navigation -->
-  <div class="md:flex md:flex-row mt-20">
-    <div class="md:w-2/5 flex flex-col justify-center items-center">
-      <h2 class="font-serif text-5xl text-gray-600 mb-4 text-center md:self-start md:text-left">Find AllOur Weddings
-        Here</h2>
-
-      <a href="#"
-        class="bg-gradient-to-r from-red-600 to-pink-500 rounded-full py-4 px-8 text-gray-50 uppercase text-xl md:self-start my-5">Shop
-        Now</a>
-    </div>
-    <div class="md:w-3/5">
-      <img src="./images/products/banner.jpg" id="mainPhoto" class="w-full" />
-    </div>
-  </div>
-  <!-- Hero sectioin -->
-  <script>
-    let images = ['./images/products/banner.jpg', './images/products/banner2.jpg', './images/products/banner3.jpg', './images/products/banner4.jpg', './images/products/product5.jpg'];
-    let index = 0;
-    const imgElement = document.getElementById('mainPhoto');
-    function change() {
-      imgElement.src = images[index];
-      index > 1 ? index = 0 : index++;
-    }
-
-    window.onload = function () {
-      setInterval(change, 3000);
-    };
-
-  </script>
-
-
-
-
-  <div class="grid grid-flow-row grid-cols-1 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
-    <div id="myModal-AirForceShoes"
-      class="modal-Tshirt flex bg-gradient-to-b flex-none absolute z-50 mt-96 pt-96 left-0 top-0 w-96 h-64">
-      <div class="modal-content-Tshirt bg-red-50 shadow-md rounded-r-md mt-auto p-20 border-solid border-2">
-        <div><a></a>
+        <div class="card card_large">
+          <img src="./images/products/product2.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
         </div>
-      </div>
-    </div>
-
-
-
-    <div class="shadow-lg rounded-l py-3 transform transition  hover:-translate-y-0.5 text-sm">
-      <a href="#">
-        <img src="./images/products/product1.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
-      </a>
-      <div class="p-5">
-        <div class="flex flex-column justify-between">
+        <div class="card card_small">
+          <img src="./images/products/product12.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
         </div>
-      </div>
-    </div>
-    
-    <div class="shadow-lg rounded-l py-3 transform transition  hover:-translate-y-0.5 text-sm">
-      <a href="#">
-        <img src="./images/products/product2.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
-      </a>
-      <div class="p-5">
-        <div class="flex flex-column justify-between">
         
+        <div class=" card_small">
+            
+
+          <iframe  height="100%" width="100%" frameborder="0" scrolling="no" allow='autoplay' src="https://www.youtube.com/embed/tvmzhUyTfTg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        </div>
+        <div class="card card_midium">
+          <img src="./images/products/product3.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div>
+        <div class="card card_small">
+          <img src="./images/products/banner2.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div>
+        <div class="card card_midium">
+          <img src="./images/products/product9.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div>
+        <div class="card card_large">
+          <img src="./images/products/product4.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div>
+        <div class="card card_small">
+          <img src="./images/products/product44.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
         </div>
 
-
-        
-
-      </div>
-    </div>
-    
-    <div class="shadow-lg rounded-l py-3 transform transition  hover:-translate-y-0.5 text-sm">
-      <a href="#">
-        <img src="./images/products/product3.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
-      </a>
-      <div class="p-5">
-        <div class="flex flex-column justify-between">
-        
+        <div class="card card_small">
+          <img src="./images/products/product8.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div>
+        <div class="card card_midium">
+          <img src="./images/products/product7.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div>
+  
+        <div class="card card_small">
+          <img src="./images/products/product5.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div>
+        <div class="card card_midium">
+          <img src="./images/products/banner.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div>
+        <div class="card card_small">
+          <img src="./images/products/banner13.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div>
+      
+        <div class="card card_small">
+          <img src="./images/products/banner3.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div>
+        <div class="card card_large">
+          <img src="./images/products/product33.png" class=" image rounded-tl-lg rounded-tr-lg" />
+        </div>
+        <div class="card card_large">
+          <iframe width="250" height="200" src="https://www.youtube.com/embed/duIZM8UoKSk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
+      <!-- <div class="card card_large">
+        <iframe src="https://assets.pinterest.com/ext/embed.html?id=872431759037250552"  height="100%" width="100%" frameborder="0" scrolling="no" ></iframe>
+        </div> -->
 
         
-
-      </div>
-    </div>
-    
-    <div class="shadow-lg rounded-l py-3 transform transition  hover:-translate-y-0.5 text-sm">
-      <a href="#">
-        <img src="./images/products/product4.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
-      </a>
-      <div class="p-5">
-        <div class="flex flex-column justify-between">
-        
+        <div class="card card_small"> <img src="./images/products/product22.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
         </div>
-
-
-        
-
-      </div>
-    </div>
-    
-    <div class="shadow-lg rounded-l py-3 transform transition  hover:-translate-y-0.5 text-sm">
-      <a href="#">
-        <img src="./images/products/product5.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
-      </a>
-      <div class="p-5">
-        <div class="flex flex-column justify-between">
-        
+        <div class="card card_midium">
+          <img src="./images/products/product23.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
         </div>
-
-
-        
-
-      </div>
-    </div>
-    
-    <div class="shadow-lg rounded-l py-3 transform transition  hover:-translate-y-0.5 text-sm">
-      <a href="#">
-        <img src="./images/products/product4.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
-      </a>
-      <div class="p-5">
-        <div class="flex flex-column justify-between">
-        
+        <div class="card card_small">
+          <img src="./images/products/product24.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
         </div>
-      </div>
-    </div>
-    
-    <div class="shadow-lg rounded-l py-3 transform transition  hover:-translate-y-0.5 text-sm">
-      <a href="#">
-        <img src="./images/products/product12.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
-      </a>
-      <div class="p-5">
-        <div class="flex flex-column justify-between">
-        
+        <div class="card card_midium">
+          <img src="./images/products/product59.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
         </div>
-      </div>
-    </div>
-    
-    <div class="shadow-lg rounded-l py-3 transform transition  hover:-translate-y-0.5 text-sm">
-      <a href="#">
-        <img src="./images/products/prdouct6.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
-      </a>
-      <div class="p-5">
-        <div class="flex flex-column justify-between">
-        
+        <div class="card card_large">
+          <iframe width="220" height="260" src="https://www.youtube.com/embed/YG6D8nQVKWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-      </div>
-    </div>
-    
-    <div class="shadow-lg rounded-l py-3 transform transition  hover:-translate-y-0.5 text-sm">
-      <a href="#">
-        <img src="./images/products/product7.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
-      </a>
-      <div class="p-5">
-        <div class="flex flex-column justify-between">
-        
+        <div class="card card_large">
+          <img src="./images/products/product26.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
         </div>
-      </div>
-    </div>
-    <div class="shadow-lg rounded-l py-3 transform transition  hover:-translate-y-0.5 text-sm">
-      <a href="#">
-        <img src="./images/products/product8.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
-      </a>
-      <div class="p-5">
-        <div class="flex flex-column justify-between">
-        
+        <div class="card card_small">
+          <img src="./images/products/product28.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
         </div>
-      </div>
-    </div>
-    <div class="shadow-lg rounded-l py-3 transform transition  hover:-translate-y-0.5 text-sm">
-      <a href="#">
-        <img src="./images/products/product9.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
-      </a>
-      <div class="p-5">
-        <div class="flex flex-column justify-between">
-        
+        <div class="card card_midium">
+          <img src="./images/products/product101.jpg" class=" image rounded-tl-lg rounded-tr-lg" />
         </div>
-      </div>
-    </div>
-
-
-  </div>
-  <div id="myModal-SmartWatch"
-    class="modal-Tshirt flex bg-gradient-to-b flex-none absolute z-50 mt-96 pt-96 left-0 top-0 w-96 h-64">
-
-    <div class="modal-content-Tshirt bg-red-50 shadow-md rounded-r-md mt-auto p-20 border-solid border-2">
-      <span class="close">&times</span>
-      <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-lg" href="#">Smart Watch
-        </h3></a>
-
-
-      <div>Cost <a class="border-gray-300 border-2 text-gray-400 rounded-md px-2 py-1 mr-2 text-lg">$435.00</a>
-      </div>
-      <p>Free 2 day Shipping</p>
-    </div>
-  </div>
-
-
-
-
-  </div> <!-- Men's Collection Section -->
-
-
-
-
-
-  <div class="rounded-lg shadow-lg my-20 flex flex-row">
-    <div
-      class="lg:w-3/5 w-full bg-gradient-to-r from-black to-purple-900 lg:from-black lg:via-purple-900 lg:to-transparent rounded-lg text-gray-100 p-12">
-      <div class="lg:w-1/2">
-        <h3 class="text-2xl font-extrabold mb-4">Subscribe to get our offers first</h3>
-        <p class="mb-4 leading-relaxed">Want to hear from us when we have new offers? Sign up for our newsletter and
-          we'll email you every time we have new sale offers.</p>
-        <div>
-          <input type="email" placeholder="Enter email address"
-            class="bg-gray-600 text-gray-200 placeholder-gray-400 px-4 py-3 w-full rounded-lg focus:outline-none mb-4" />
-          <button type="submit" class=" cursor-pointer bg-red-600 py-3 rounded-lg w-full">Subscribe</button>
+      
+        <div class="card card_small">
+          <iframe width="220" height="245" src="https://www.youtube.com/embed/jt_HlehLbls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-      </div>
-    </div>
-    <div class="lg:w-2/5 w-full lg:flex lg:flex-row hidden">
-      <img src="./images/subscribe-banner.png" class="h-96" />
-    </div>
-    ']
-
-
-    <style>
-      .modal-Tshirt {
-        background-color: rgba(136, 136, 136, 0.221);
-        display: none;
-        position: absolute;
-        z-index: 1000;
-        margin-top: 530px;
-        padding-top: 100px;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 600%;
-
-
-      }
-
-
-      .modal {
-        background-color: rgba(136, 136, 136, 0.221);
-        display: none;
-        position: absolute;
-        z-index: 1000;
-        margin-top: 530px;
-        padding-top: 100px;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 600%;
-
-
-
-      }
-
-      .modal2 {
-        background-color: rgba(136, 136, 136, 0.221);
-        display: none;
-        position: absolute;
-        z-index: 1000;
-        margin-top: 1200px;
-        padding-top: 100px;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 600%;
-
-
-
-      }
-
-      .modal-content {
-        background-color: #fefefe;
-        box-shadow: 2px 5px #0987c15f;
-        border-bottom-right-radius: #888888;
-        margin: 15% auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 70%;
-        height: 10%;
-      }
-
-      .close {
-        color: #aaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-      }
-
-      .close:hover,
-      .close:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-      }
-    </style>
-    <!-- Modal logic -->
-    <script>
  
-      //  AirForce Ship
-      var myAirForceShoes = document.getElementById("myModal-AirForceShoes")
-      var btn3 = document.getElementById("myBtn3");
-      btn3.onclick = function () {
-        myAirForceShoes.style.display = "block"
-      }
+        <div class="card card_large">
+          <iframe width="220" height="200" src="https://www.youtube.com/embed/tYSwokw14uo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
-
-
-      // Slim cut jeans modal logic
-      var myModalSlimCutPants = document.getElementById("myModal-SlimCutPants")
-      var btn2 = document.getElementById("myBtn2")
-      btn2.onclick = function () {
-        myModalSlimCutPants.style.display = "block"
-      }
-
-      //t-shirt modal logic
-      var myModalTshirt = document.getElementById("myModal-Tshirt")
-      var btn = document.getElementById("myBtn");
-      btn.onclick = function () {
-        myModalTshirt.style.display = "block"
-      }
-
-      // Smart Watch Modal Logic
-      var mySmartWatch = document.getElementById("myModal-SmartWatch")
-      var btn4 = document.getElementById("myBtn4");
-      btn4.onclick = function () {
-        mySmartWatch.style.display = "block"
-      }
-
-      // V Dress Modal Logic
-      var myVdress = document.getElementById("myModal-Vdress")
-      var btn5 = document.getElementById("myBtn5");
-      btn5.onclick = function () {
-        myVdress.style.display = "block"
-      }
-
-      // Wrapped Shoes Modal Logic
-      var myWrappedShoes = document.getElementById("myModal-myWrappedShoes")
-      var btn6 = document.getElementById("myBtn6");
-      btn6.onclick = function () {
-        myWrappedShoes.style.display = "block"
-      }
-
-      // Blue Denuim Dress Logic
-      var myBlueDenuim = document.getElementById("myModal-myBlueDenuim")
-      var btn7 = document.getElementById("myBtn7");
-      btn7.onclick = function () {
-        myBlueDenuim.style.display = "block"
-      }
-
-      // Low Printed Dress Logic
-      var myLowPrintedDress = document.getElementById("lowPrintedDress")
-      var btn8 = document.getElementById("myBtn8");
-      btn8.onclick = function () {
-        myLowPrintedDress.style.display = "block"
-      }
-
-
-      //window modal exit       
-      window.onclick = function (event) {
-        if (event.target == myModalTshirt) {
-          myModalTshirt.style.display = "none"
-        }
-        if (event.target == myModalSlimCutPants) {
-          myModalSlimCutPants.style.display = "none"
-        }
-        if (event.target == myAirForceShoes) {
-          myAirForceShoes.style.display = "none"
-
-          if (event.target == mySmartWatch) {
-            mySmartWatch.style.display = "none"
-          }
-          if (event.target == myVdress) {
-            myVdress.style.display == "none"
-          }
-          if (event.target == myWrappedShoes) {
-            myWrappedShoes.style.display == "none"
-          }
-          if (event.target == myBlueDenuim) {
-            myBlueDenuim.style.display == "none"
-          }
-          if (event.target == myLowPrintedDress) {
-            myLowPrintedDress.style.display == "none"
-          }
-        }
-      }
-
-      //multiple span modal exit. 
-      var span = document.getElementsByClassName("close")[0];
-      span.onclick = function () {
-        myModalTshirt.style.display = "none"
-
-      }
-      var span = document.getElementsByClassName("close")[0];
-      span.onclick = function () {
-
-        myModalSlimCutPants.style.display = "none"
-      }
-
-    </script>
-    <script src="cart.js">
-    </script>
-
-  </div><!-- Newsletter Section -->
-
-  <div class="border-t-2 border-gray-300 flex flex-col md:flex-row md:justify-between text-center py-5 text-sm">
-    <div class="mb-4">
-      <a href="#" class="mx-2.5">About</a>
-      <a href="#" class="mx-2.5">Privacy Policy</a>
-      <a href="#" class="mx-2.5">Terms of Services</a>
     </div>
-
-    <p>&copy; Copyright Reserved 2022</p>
-  </div><!-- Footer Section -->
-  </div>
 </body>
-
 </html>
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
