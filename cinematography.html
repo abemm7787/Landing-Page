@@ -1,61 +1,73 @@
-<style> 
-
-
+<style>
     @import url('https://fonts.googleapis.com/css2?family=Blinker:wght@300;400;600;700&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
-    
-    
-    header{
-      height: 30px;
-      margin-bottom: 40px;
-    
+
+    .blacnhe {
+        background-color: blanchedalmond;
+        border-style: solid;
+        border: 1px;
+        border-color: burlywood;
     }
-    *{
+
+    header {
+        height: 30px;
+        margin-bottom: 40px;
+
+    }
+
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         font-family: 'Poppins', sans-serif;
-    
+
     }
-    .nav{
+
+    .nav {
         display: flex;
         justify-content: space-between;
         height: 50px;
         margin-top: 1%;
     }
-    .nav > li:hover{
+
+    .nav>li:hover {
         color: red;
     }
-    .nav > li{
+
+    .nav>li {
         list-style: none;
         cursor: pointer;
         padding: 1%;
     }
-    
-    .nav > li:nth-child(2){
+
+    .nav>li:nth-child(2) {
         font-weight: 600;
-    
-        
+
+
     }
-    .nav > li:nth-child(3){
-        font-weight: 600;       
+
+    .nav>li:nth-child(3) {
+        font-weight: 600;
     }
-    
-    .nav > li:nth-child(6){
+
+    .nav>li:nth-child(6) {
         font-size: 20px;
-        color: gray; 
-    
+        color: gray;
+
     }
-    .nav > li:nth-child(6):hover{
+
+    .nav>li:nth-child(6):hover {
         color: red;
     }
-    .search{   
+
+    .search {
         width: 70%;
         position: relative;
         padding: 1%;
-        
+
     }
-    .search > input{
-        
+
+    .search>input {
+
         border: 0;
         width: 100%;
         height: 40px;
@@ -63,131 +75,145 @@
         margin-top: -5px;
         padding: 1%;
         background-color: rgba(128, 128, 128, 0.212);
-        
+
     }
-    .search > input:focus{
+
+    .search>input:focus {
         outline: none;
     }
-    
-    
-    .notification i{
+
+
+    .notification i {
         font-size: 20px;
-        
+
         color: gray;
         margin-top: 5px;
-    
+
     }
-    .notification i:hover{
+
+    .notification i:hover {
         color: rgba(0, 17, 255, 0.733);
     }
-    
-    
-    .profile img{
+
+
+    .profile img {
         object-fit: cover;
-    
+
         border-radius: 50%;
     }
-    
+
     /* <!-- --------------------nav End -------------------- --> */
-    
-    .container{
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(auto-fill,250px);
-        grid-template-rows: auto;
-        justify-content: center;
-        column-gap: 15px;
-        margin-top: 30px;
-        /* gap: 1%; */
-        /* margin: 2%; */
-    
+
+    .container {
+
+        width: auto;
+        margin-top: 70px;;
+
     }
-    .container > div{
+
+    .container>div {
         padding: 0;
         margin: 15px 10px;
         border-radius: 20px;
-    
+
     }
-    .card > iframe{
-        border-radius:25px ;
+
+    .card>iframe {
+        border-radius: 25px;
     }
-    .container  img{
+
+    .container img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         border-radius: 20px;
     }
-    .card_small{
+
+    .card_small {
         grid-row-end: span 26;
     }
-    .card_midium{
+
+    .card_midium {
         grid-row-end: span 33;
     }
-    .card_large{
+
+    .card_large {
         grid-row-end: span 40;
     }
-    
-    
-    @media all and(min-width: 421px) and (max-width: 768px){
-        .container{
-            grid-template-columns: repeat(auto-fill,200px);
+
+
+    @media all and(min-width: 421px) and (max-width: 768px) {
+        .container {
+            grid-template-columns: repeat(auto-fill, 200px);
         }
-        .search{
+
+        .search {
             display: none;
         }
-        .nav > li:nth-child(2){
+
+        .nav>li:nth-child(2) {
             font-weight: 500;
             font-size: 15px;
-            
+
         }
     }
-    
-    @media all and (min-width:50px) and (max-width: 420px){
-        .container{
-            grid-template-columns: repeat(auto-fill,150px);
+
+
+
+    @media all and (min-width:50px) and (max-width: 420px) {
+        .container {
+            grid-template-columns: repeat(auto-fill, 150px);
         }
-        .container > div{
+
+        .container>div {
             padding: 0;
             margin: 8px 5px;
             border-radius: 20px;
-        
+
         }
-        .nav{
+
+        .nav {
             padding: 2%;
         }
-        .search > input{
+
+        .search>input {
             /* display: none; */
             padding: 3%;
         }
-        .nav > li>img{
+
+        .nav>li>img {
             width: 30px;
             height: 30px;
-            
+
         }
-        .nav > li {
+
+        .nav>li {
             font-size: 12px;
-            
+
         }
-        .nav > li i{
+
+        .nav>li i {
             display: none;
-            
+
         }
-        .nav > li:nth-child(2){
+
+        .nav>li:nth-child(2) {
             display: none;
-            
+
         }
-        .nav > li:nth-child(3){
+
+        .nav>li:nth-child(3) {
             display: none;
-            
+
         }
-        .card > iframe{
-            border-radius:25px ;
+
+        .card>iframe {
+            border-radius: 25px;
         }
-    
+
     }
-        
-    </style>
-    
+</style>
+
 
 
 
@@ -231,38 +257,73 @@
 
 
         <div>
+           
+
+       
+
             <iframe height="100%" width="100%" frameborder="0" scrolling="no" allow='autoplay'
                 src="https://www.youtube.com/embed/tvmzhUyTfTg" title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
         </div>
+        <h1 class="blacnhe">Fully Scaleable Video Packages, with professional camera team to operate beautiful motion 6k pictures as well for live-stream events. This stunning footage filmed in Glen falls NewYork. A gorgeous waterfall visible from the parking lot of the hotel next door, a tranquil site for wedding pictures and videos! Must check out if around the area. 
+        </h1>
 
-    
         <div>
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/v5il69MDq7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-
-        <div >
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/duIZM8UoKSk"
+           
+      
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/v5il69MDq7s"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
 
-        <div > 
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/lPRldFHmHhc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+        <div>
+            <h1 class="blacnhe">
+                Aerial videos provide a better understanding of what the property actually looks like, its dimensions
+                and size, and the surrounding area. See for yourself, check out the dream-style mansion in the heart of
+                Raritan Valley, built to its Highest Standards. Lush garden view film in 4k
+            </h1>
+
+           
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/lPRldFHmHhc"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <div>
+            <h1 class="blacnhe">
+  
+                90% of our footage is approve in any Netflix project we make.   Our classical rule is to have our attention with multiple camera operators for close-up, medium shots, long shots, preoperative lighting set-up, and great audio even in low-budget film production. If you have a strong message,we want you to stand out above all. 
+            </h1>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/duIZM8UoKSk"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+                <h1 class="blacnhe">
+                    Your ceremony is suitable for a cinematic touch, film in 6k. We love to get involved with range of different social and ethnic backgrounds. 
+                 
+                </h1>
+        </div>
+
+
+        <div>
+          
+                
+            </h1>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jt_HlehLbls"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            
+                <h1 class="blacnhe"> Sports videography proficiency, audio, and animation editing techniques with Adobe Creative Cloud software.</h1>
+       
+            </div>
+
+
+
+
+
     </div>
-
-
-<div> 
-    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/EVZwyot3Oog" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
-</div>
-
-<div> 
-
-<iframe width="100%" height="100%" src="https://www.youtube.com/embed/jt_HlehLbls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-
-
-</div>
